@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Under Construction — Prashant Bisht</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        background: #0d0d0f;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 48px;
+        background: linear-gradient(90deg, #00eaff, #9f00ff, #ff00ff);
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: gradientMove 4s infinite;
+        background-size: 300%;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0%; }
+        50% { background-position: 100%; }
+        100% { background-position: 0%; }
+    }
+
+    p {
+        font-size: 20px;
+        opacity: 0.7;
+        max-width: 500px;
+    }
+
+    .loader {
+        margin-top: 30px;
+        width: 80px;
+        height: 80px;
+        border: 6px solid #222;
+        border-top: 6px solid #00eaff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    a {
+        margin-top: 40px;
+        padding: 15px 35px;
+        border-radius: 50px;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 600;
+        background: linear-gradient(90deg, #00eaff, #9f00ff);
+        box-shadow: 0 0 20px #00eaff55;
+        color: white;
+    }
+
+    a:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px #00eaffaa;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>🚧 Under Construction</h1>
+
+<p>This page is currently being built. Please check back later!</p>
+
+<div class="loader"></div>
+
+<a href="/">Return to Home</a>
+
+</body>
+</html>
